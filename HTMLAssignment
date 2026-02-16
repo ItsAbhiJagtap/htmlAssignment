@@ -1,0 +1,277 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNo/0N77cXumhbZh6QpIuH+",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ItsAbhiJagtap/htmlAssignment/blob/main/HTMLAssignment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Explain the basic structure of an HTML page. Why is it important to follow\n",
+        "this structure?"
+      ],
+      "metadata": {
+        "id": "BRPRCBkIPxZ4"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer:-a.Basic structure of HTML page is as follows:-"
+      ],
+      "metadata": {
+        "id": "FETLkkb2SmQF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "<!DOCTYPE html>\n",
+        "<html lang=\"en\">\n",
+        "<head>\n",
+        "    <meta charset=\"UTF-8\">\n",
+        "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n",
+        "    <title></title>\n",
+        "</head>\n",
+        "<body>\n",
+        "\n",
+        "</body>\n",
+        "</html>"
+      ],
+      "metadata": {
+        "id": "v6aojrWQS74A"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "b.Its important to follow HTML structure as it the foundation of our web application.It also help SEO properly,accessibilty is improved,we can integrate CSS styles and Javascript and overall code stay maintanable to the cross-functional team working on the same"
+      ],
+      "metadata": {
+        "id": "p0am872vTAOY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.You’re building a small personal profile page. Which HTML tags will you\n",
+        "use to highlight your name as a heading, describe yourself in a paragraph, and\n",
+        "emphasize a key skill?"
+      ],
+      "metadata": {
+        "id": "-jip_g2IT10m"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " Answer:-To build my own personal profile page,I will use `<h1>` tag.To describe myself in a paragraph i will use `<p>` tag.Lastly to emphasize my key skillset I will use `<em>`/`<strong>` tag."
+      ],
+      "metadata": {
+        "id": "hv0U_OSeT7J2"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3.Look at the code below. Can you find and fix the mistake?\n",
+        "<!-- This is an HTML comment\n",
+        "<h1>Welcome to my website</h1>"
+      ],
+      "metadata": {
+        "id": "Y5CHpssUW1wH"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer:- `<!-- This is an HTML comment-->`\n",
+        "`<h1>Welcome to my website</h1>`.Corrected the comment tag which wasnt closed properly."
+      ],
+      "metadata": {
+        "id": "AsYxK8QVWQUy"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4.You’re creating a form that asks the user to enter their name, select their\n",
+        "country from a list, and click a button to submit. Write the HTML code for this."
+      ],
+      "metadata": {
+        "id": "psr9Iy_0W9Lc"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer:-User Input Form:-\n",
+        "```\n",
+        "<form action=\"#\">\n",
+        "        <!-- Name Input -->\n",
+        "            <label for=\"firstname\">First Name:</label>\n",
+        "            <input type=\"text\" id=\"firstname\" name=\"firstname\" required placeholder=\"Firstname\">\n",
+        "            <label for=\"lastname\">Last Name:</label>\n",
+        "            <input type=\"text\" id=\"lastname\" name=\"lastname\" required placeholder=\"Lastname\">\n",
+        "        <br><br>\n",
+        "        <!-- Country Selections -->\n",
+        "         <label for=\"country\">Country:</label>\n",
+        "         <select id=\"country\" name=\"country\" required>\n",
+        "            <option value=\"\">Select a country</option>\n",
+        "            <option value=\"IND\">India</option>\n",
+        "            <option value=\"USA\">United States</option>\n",
+        "            <option value=\"CANADA\">Canada</option>\n",
+        "            <option value=\"UK\">United Kingdom</option>\n",
+        "         </select>\n",
+        "         <br><br>\n",
+        "         <!-- Submit Button -->\n",
+        "         <input type=\"submit\" value=\"Submit\">\n",
+        "    </form>\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "YrkTaRVsaRk-"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5. Write short HTML code to show your favorite fruits in a bulleted list and\n",
+        "your top 3 programming languages in a numbered list."
+      ],
+      "metadata": {
+        "id": "iZ7fBOGdao4H"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer:-\n",
+        "\n",
+        "\n",
+        "```\n",
+        "    <div>\n",
+        "        <h4>My Favorite Fruits</h4>\n",
+        "        <ul>\n",
+        "            <li>Apple</li>\n",
+        "            <li>Banana</li>\n",
+        "            <li>Orange</li>\n",
+        "            <li>Grapes</li>\n",
+        "            <li>Mango</li>\n",
+        "        </ul>\n",
+        "        <h4>My Top 3 Programming Languages</h4>\n",
+        "        <ol>\n",
+        "            <li>JavaScript</li>\n",
+        "            <li>React</li>\n",
+        "            <li>Next.js</li>\n",
+        "        </ol>\n",
+        "   </div>\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "1MUQNrswau5b"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "6.Ravi wants to leave a note in his HTML file so that only other developers\n",
+        "can see it, not the users on the website. How should he do this? Why are such notes\n",
+        "useful?"
+      ],
+      "metadata": {
+        "id": "mCJPegi6b0GW"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer:-To leave a note in HTML file Ravi should be using `<!--  -->`comments so that only other developers can see it and not the users on the website.Such notes(**comments**) are useful to the other developers as they can understand,maintain and change specific piece of code efficiently."
+      ],
+      "metadata": {
+        "id": "2aQE26S_b1Wg"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "7.Here’s a form snippet. Can you spot the error and rewrite the correct\n",
+        "version?\n",
+        "\n",
+        "\n",
+        "```\n",
+        "<form>\n",
+        "<input name=\"email\">\n",
+        "<select>\n",
+        "<option>India</option>\n",
+        "</select>\n",
+        "<button>Send</buton>\n",
+        "</form>\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "obrX1TPHdMvV"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Answer:-Corrected Version\n",
+        "\n",
+        "```\n",
+        "<form action=\"#\">\n",
+        "   <label for=\"email\">Email:</label>\n",
+        "   <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Enter your Email\">\n",
+        "   <select name=\"country\">\n",
+        "    <option value=\"India\">India</option>\n",
+        "   </select>\n",
+        "   <button type=\"submit\">Send</button>\n",
+        "</form>\n",
+        "```\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Nu1J27-kdhfw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "a"
+      ],
+      "metadata": {
+        "id": "RDSdUluodbmI"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
